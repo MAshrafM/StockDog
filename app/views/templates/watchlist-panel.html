@@ -7,7 +7,7 @@
 		<span class="glyphicon glyphicon-plus"></span>
 		</button>
 	</div>
-	
+
 	<div class="panel-body">
 		<!-- show help text -->
 		<div ng-if="!watchlists.length" class="text-center">
@@ -15,7 +15,10 @@
 		</div>
 		<div class="list-group">
 			<!-- repeat over list -->
-			<a class="list-group-item" ng-repeat="list in watchlists track by $index">
+			<a class="list-group-item"
+			ng-class="{active: currentList == list.id}"
+			ng-repeat="list in watchlists track by $index"
+			ng-click="gotoList(list.id)">
 			{{list.name}}
 			<!-- delete this list -->
 			<button type="button" class="close" ng-click="deleteList(list)"> &times;

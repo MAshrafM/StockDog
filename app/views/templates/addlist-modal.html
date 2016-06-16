@@ -6,7 +6,7 @@
 				<button type="button" class="close" ng-click="$hide()"> &times;</button>
 				<h4 class="modal-title">Create New Watchlist</h4>
 			</div>
-			
+
 			<!-- form for validation -->
 			<form role="form" id="add-list" name="listForm">
 				<div class="modal-body">
@@ -15,7 +15,7 @@
 						<!-- bind input to watchlist.name -->
 						<input type="text" class="form-control" id="list-name" placeholder="Name this list" ng-model="watchlist.name" required>
 					</div>
-					
+
 					<div class="form-group">
 						<label for="list-description">List Description</label>
 						<!-- bind input to watchlist.description -->
@@ -24,7 +24,7 @@
 				</div>
 				<div class="modal-footer">
 					<!-- create list -->
-					<button type="submit" class="btn btn-success" ng-click="createList()" ng-disabled="!ListForm.$valid">Create</button>
+					<button type="submit" class="btn btn-success" ng-click="createList()" ng-disabled="!listForm.$valid">Create</button>
 					<button type="button" class="btn btn-danger" ng-click="$hide()">Cancel</button>
 				</div>
 			</form>
