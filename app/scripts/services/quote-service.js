@@ -14,7 +14,7 @@ angular.module('stockDogApp')
 
     // update stocks
     var update = function(quotes){
-      console.log(quotes);
+      //console.log(quotes);
       if (quotes.length === stocks.length) {
         _.each(quotes, function (quote, idx) {
           var stock = stocks[idx];
