@@ -1,12 +1,15 @@
-# stock-dog
-
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+# StockDog
+It is an AngularJS project, part of the Profeesional AngularJS by Diego Netto. <br />
+This version follow the steps of building the project from scratch. <br />
 
 ## Build & development
 
+from command-line you should have grunt/npm/bower<br />
+Run `npm install` and `bower install`
 Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+### Future improvements
+- make it responsive
+- add a front
+- attach a model to save data instead of LocalStorage
+- add a login system / oAuth.
